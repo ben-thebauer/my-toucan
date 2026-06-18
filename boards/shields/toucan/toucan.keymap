@@ -17,6 +17,24 @@
         };
     };
 
+    macros {
+        email_personal: email_personal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp B &kp E &kp N &kp R &kp B &kp A &kp U &kp E &kp R &kp AT &kp P &kp M &kp DOT &kp M &kp E>;
+        };
+
+        email_work: email_work {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp B &kp E &kp N &kp J &kp A &kp M &kp I &kp N &kp DOT &kp B &kp A &kp U &kp E &kp R &kp AT &kp S &kp T &kp U &kp B &kp H &kp U &kp B &kp DOT &kp C &kp O &kp M>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
